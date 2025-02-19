@@ -1,0 +1,369 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(221, 221, 221);
+}
+
+.rodape{
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    padding: 30px 0px;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0px -2px 5px rgb(43, 207, 2); /* Deslocamento horizontal (a sombra se move 10px para a direita), Deslocamento vertical (a sombra se move 10px para baixo), Desfoque (quanto mais alto, mais borrada fica a sombra).*/
+}
+
+.bg-header-light {
+    box-shadow: 0px 2px 5px rgb(43, 207, 2); /* Deslocamento horizontal (a sombra se move 10px para a direita), Deslocamento vertical (a sombra se move 10px para baixo), Desfoque (quanto mais alto, mais borrada fica a sombra).*/
+    background-color: white;
+    height: 100px;
+}
+
+.linha-vertical {
+    height: 60px;/*Altura da linha*/
+    border-left: 2px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container{
+    display: flex;
+}
+
+#container-main-page{
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    flex: 1;
+}
+
+#container-header{
+    display: flex;
+    align-items: center;
+}
+
+#header-comps{
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+}
+
+.btn-group span{
+    margin-left: 3px;
+}
+
+.btn-group img{
+    margin-right: 3px;
+}
+
+.dropdown-menu-right {
+    transform: translateX(10%);
+}
+
+.content-container{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 900px;
+    height: fit-content;
+    padding: 35px 20px;
+}
+
+.start-carousel{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.carousel-image {
+    width: 200px;
+    height: auto; /* Defina a altura que deseja para o carrossel */
+    object-fit: cover;
+    border: 0.5px solid black;
+    border-radius: 3%;
+}
+
+.start-carousel h5 {
+    font-size: 15px;
+}
+
+.start-carousel span {
+    font-size: 18px;
+    text-shadow: 
+        -1px -1px 0 black,  /* Sombra superior esquerda */
+         1px -1px 0 black,  /* Sombra superior direita */
+        -1px  1px 0 black,  /* Sombra inferior esquerda */
+         1px  1px 0 black;  /* Sombra inferior direita */
+}
+
+.start-carousel a{
+    color: white;
+    text-decoration: none;
+}
+
+#carouselUSOpen{
+    width: 200px;
+    height: fit-content;
+    border: 0.5px solid black;
+    border-radius: 3%;
+}
+
+.container-news{
+    display: block;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5%;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.801);
+}
+
+.container-ranking{
+    display: block;
+    height: fit-content;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 5%;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.801);
+}
+
+.container-ranking h1{
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#rankingATP{
+    border: 0.5px solid #333;
+    width: 500px;
+    height: fit-content;
+}
+
+.atp-site{
+    color: #333;
+    font-weight: 600;
+    margin-left: 45%;
+    justify-content: bottom;
+}
+
+/* Estilo da tabela */
+table.ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0px;
+}
+
+/* Cabeçalho da tabela */
+table.ranking-table thead {
+    background-color: #007bff;
+    color: white;
+}
+
+table.ranking-table th, table.ranking-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table.ranking-table th {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+table.ranking-table tr:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+/* Estilo das bandeiras */
+.flag {
+    width: 30px;
+    height: auto;
+}
+
+/* Estilo dos números e texto */
+td {
+    font-size: 1rem;
+}
+
+#gs-winners-header{
+    text-align: center;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#gs-winners-header hr{
+    background-color: black;
+    width: 65%;
+    height: 0.5px;
+}
+
+#container-winners{
+    display: flex;
+    justify-content: center;
+    width: 830px;
+}
+
+#container-winners .card {
+    color: black;
+    height: 490px;
+    margin-right: 10px;
+    box-shadow: 0px 2px 5px rgb(0, 0, 0);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#container-winners .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#container-winners .card h5{
+    margin-bottom: -2px;
+    font-size: 23px;
+}
+
+#container-winners .card p{
+    font-size: 17px;
+    text-align: left;
+}
+
+#container-winners .card hr{
+    background-color: black;
+}
+
+/* css do masters.html */
+
+.container-masters{
+    display: flex;
+    justify-content: center;
+}
+
+#atp-container{
+    display: inline;
+}
+
+#atp-container .card {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.801);
+    position: relative;
+    overflow: hidden;
+    width: 40rem;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+
+#atp-container .card img{
+    width: 100%;         /* Ajusta a largura da imagem ao tamanho do card */
+    height: 200px;        /* Ajusta a altura da imagem ao tamanho do card */
+    object-fit: cover;   /* Faz a imagem cobrir completamente o card sem distorção */
+    object-position: center;
+}
+
+#atp-container .card-title{
+    text-align: center;
+}
+
+#atp-container hr{
+    background-color: black;
+    width: 50%;
+    height: 0.2px;
+    margin-top: 0px;
+
+}
+
+#header-atp{
+    display: flex;
+    width: 640px;
+    margin-bottom: 30px;
+    align-items: center;
+    background-color: #efefef;
+    border-radius: 2%;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.801);
+    padding: 10px;
+}
+
+#header-atp span{
+    margin-left: 20px;
+}
+
+/* css do wimbledon.html */
+
+.wimbledon{
+    display: block;
+    margin: 5px 20px;
+    padding: 10px;
+}
+
+.wimb-content img.left{
+    float: left;
+    margin: 8px 12px;
+    clear: both;
+}
+
+.wimb-content img.right{
+    float: right;
+    clear: both;
+    margin: 0px 12px;
+}
+
+.wimb-content{
+    display: flex;
+    align-items: center;
+    font-size: 110%;
+}
+
+.wimb-content img{
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.801);
+}
+
+.wimbledon tr a:link{
+    color: black;
+}
+
+.wimbledon td{
+    padding: 10px 10px 0px 10px;
+    text-align: center;
+    width: 240px;
+    height: 10px;
+    vertical-align: middle;
+}
+
+.wimbledon tr:hover{
+    background-color: rgba(211, 211, 211, 0.795);
+}
+
+.wimbledon table{
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.801);
+    margin: 0px auto;
+}
+
+.current-champ{
+    text-align: center;
+    width: 720px;
+    height: fit-content;
+    margin: 15px auto;
+    padding: 20px 0px;
+    box-shadow: none;
+}
+
+.current-champ .card{
+    margin: 0px auto;
+    width: 235px;
+    border: none;
+}
+
+.current-champ a:link{
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+.current-champ a:hover{
+    transform: scale(1.01);
+    text-decoration: none;
+}
